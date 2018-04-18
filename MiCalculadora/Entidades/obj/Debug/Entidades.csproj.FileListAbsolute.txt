@@ -10,3 +10,9 @@ C:\Users\Lucas-notebook\c-sharp\MiCalculadora\Entidades\obj\Debug\Entidades.cspr
 C:\Users\Lucas-notebook\c-sharp\MiCalculadora\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
 C:\Users\Lucas-notebook\c-sharp\MiCalculadora\Entidades\obj\Debug\Entidades.exe
 C:\Users\Lucas-notebook\c-sharp\MiCalculadora\Entidades\obj\Debug\Entidades.pdb
+D:\lucastp\MiCalculadora\Entidades\bin\Debug\Entidades.dll.config
+D:\lucastp\MiCalculadora\Entidades\bin\Debug\Entidades.dll
+D:\lucastp\MiCalculadora\Entidades\bin\Debug\Entidades.pdb
+D:\lucastp\MiCalculadora\Entidades\obj\Debug\Entidades.csprojResolveAssemblyReference.cache
+D:\lucastp\MiCalculadora\Entidades\obj\Debug\Entidades.dll
+D:\lucastp\MiCalculadora\Entidades\obj\Debug\Entidades.pdb
