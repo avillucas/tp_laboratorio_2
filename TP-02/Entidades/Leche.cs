@@ -11,30 +11,13 @@ namespace Entidades_2017
     public class Leche : Producto
     {
         public enum ETipo { Entera, Descremada }
+
         ETipo _tipo;
-
-        /// <summary>
-        /// Por defecto, TIPO será ENTERA
-        /// </summary>
-        /// <param name="marca"></param>
-        /// <param name="patente"></param>
-        /// <param name="color"></param>
-        public Leche(EMarca marca, string patente, ConsoleColor color)
-            : this(marca, patente, color, ETipo.Entera)
-            
-        {
-
-        }
-
-        public Leche(EMarca marca, string patente, ConsoleColor color, ETipo tipo) : base(patente, marca, color)
-        {
-            this._tipo = tipo;
-        }
 
         /// <summary>
         /// Las leches tienen 20 calorías
         /// </summary>        
-        public override short CantidadCalorias
+        protected override short CantidadCalorias
         {
             get
             {
@@ -42,6 +25,39 @@ namespace Entidades_2017
             }
         }
 
+        #region "Constructores"
+
+        /// <summary>
+        /// Crea una leche de tipo Entera
+        /// </summary>
+        /// <param name="marca">Narca de la leche</param>
+        /// <param name="codigo">Codigo de barras de la leche</param>
+        /// <param name="color">Color del empaque</param>
+        public Leche(EMarca marca, string codigo, ConsoleColor color) : this(marca, codigo, color, ETipo.Entera)            
+        {
+
+        }
+
+        /// <summary>
+        /// Crea una leche
+        /// </summary>
+        /// <param name="marca">Marca de la leche</param>
+        /// <param name="codigo">Codigo de barras</param>
+        /// <param name="color">Color el empaque</param>
+        /// <param name="tipo">Tipo de leche</param>
+        public Leche(EMarca marca, string codigo, ConsoleColor color, ETipo tipo) : base(codigo, marca, color)
+        {
+            this._tipo = tipo;
+        }
+
+        #endregion
+
+        #region "Metodos"
+
+        /// <summary>
+        /// Retorna un detalle de la leche
+        /// </summary>
+        /// <returns></returns>
         public override sealed string Mostrar()
         {
             StringBuilder sb = new StringBuilder();
@@ -55,5 +71,7 @@ namespace Entidades_2017
 
             return sb.ToString();
         }
+
+        #endregion
     }
 }

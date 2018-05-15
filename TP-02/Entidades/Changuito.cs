@@ -22,9 +22,9 @@ namespace Entidades_2017
         /// </summary>
         public enum ETipo
         {
-            Dulce, 
-            Leche, 
-            Snacks, 
+            Dulce,
+            Snacks,
+            Leche,             
             Todos
         }
 
@@ -54,7 +54,7 @@ namespace Entidades_2017
         /// <returns></returns>
         public override string ToString()
         {
-            return Changuito.Mostrar(this, ETipo.Todos);
+            return this.Mostrar(this, ETipo.Todos);
         }
 
         #endregion
@@ -67,7 +67,7 @@ namespace Entidades_2017
         /// <param name="c">Elemento a exponer</param>
         /// <param name="ETipo">Tipos de ítems de la lista a mostrar</param>
         /// <returns></returns>
-        public static string Mostrar(Changuito c, ETipo tipo) //quitar static
+        public string Mostrar(Changuito c, ETipo tipo)  
         {
             StringBuilder sb = new StringBuilder();
 
@@ -78,17 +78,27 @@ namespace Entidades_2017
                 switch (tipo)
                 {
                     case ETipo.Snacks:
-                        sb.AppendLine(v.Mostrar());
-                        break;
+                            if(v is Snacks)
+                            { 
+                                sb.AppendLine(v.Mostrar());
+                            }
+                    break;
                     case ETipo.Dulce:
-                        sb.AppendLine(v.Mostrar());
+                            if (v is Dulce)
+                            {
+                                sb.AppendLine(v.Mostrar());
+                            }
                         break;
                     case ETipo.Leche:
-                        sb.AppendLine(v.Mostrar());
-                        break;
+                        if (v is Leche)
+                        {
+                            sb.AppendLine(v.Mostrar());
+                        }
+                    break;
                     default:
+                        //Todos
                         sb.AppendLine(v.Mostrar());
-                        break;
+                    break;
                 }
             }
 
@@ -106,6 +116,10 @@ namespace Entidades_2017
         /// <returns></returns>
         public static Changuito operator +(Changuito c, Producto p)
         {
+            //en caso de que este lleno no se agrega el producto
+            if (c._productos.Count() >= c._espacioDisponible) {
+                return c;
+            }
             foreach (Producto v in c._productos)
             {
                 if (v == p)
@@ -127,6 +141,8 @@ namespace Entidades_2017
             {
                 if (v == p)
                 {
+                    //quita el producto
+                    c._productos.Remove(v);
                     break;
                 }
             }

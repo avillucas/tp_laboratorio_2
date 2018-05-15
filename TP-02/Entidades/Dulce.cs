@@ -8,6 +8,19 @@ namespace Entidades_2017
 {
     public class Dulce : Producto
     {
+
+        /// <summary>
+        /// Retorna la cantidad de calorias
+        /// </summary>
+        protected override short CantidadCalorias
+        {
+            get
+            {
+                return 80;
+            }
+        }
+
+        #region "Constructores"
         /// <summary>
         /// Crea un Dulce de leche
         /// </summary>
@@ -18,17 +31,13 @@ namespace Entidades_2017
         {
         }
 
-        /// <summary>
-        /// Retorna la cantidad de calorias
-        /// </summary>
-        public override short CantidadCalorias
-        {
-            get
-            {
-                return 80;
-            }
-        }
+        #endregion
 
+        #region "Metodos"
+        /// <summary>
+        /// Retorna un detalle del dulce
+        /// </summary>
+        /// <returns></returns>
         public override sealed string Mostrar()
         {
             StringBuilder sb = new StringBuilder();
@@ -40,5 +49,6 @@ namespace Entidades_2017
 
             return sb.ToString();
         }
+        #endregion
     }
 }

@@ -7,10 +7,9 @@ using System.Threading.Tasks;
 namespace Entidades_2017
 {
     /// <summary>
-    /// La clase Producto será abstracta, evitando que se instancien elementos de este tipo.
-    /// porque el sealed
+    /// La clase Producto será abstracta, evitando que se instancien elementos de este tipo.    
     /// </summary>
-    public abstract  class Producto
+    public abstract class Producto
     {
         public enum EMarca
         {
@@ -41,7 +40,7 @@ namespace Entidades_2017
         /// <summary>
         /// ReadOnly: Retornará la cantidad de ruedas del vehículo
         /// </summary>
-        public abstract short CantidadCalorias { get;  }
+        protected abstract short CantidadCalorias { get;  }
 
         /// <summary>
         /// Publica todos los datos del Producto.

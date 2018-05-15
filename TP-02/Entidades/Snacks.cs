@@ -8,14 +8,11 @@ namespace Entidades_2017
 {
     public class Snacks:Producto
     {
-        public Snacks(Producto.EMarca marca, string patente, ConsoleColor color)
-            : base(patente, marca, color)
-        {
-        }
+
         /// <summary>
         /// Los snacks tienen 104 calorías
         /// </summary>
-        public override short CantidadCalorias
+        protected override short CantidadCalorias
         {
             get
             {
@@ -23,6 +20,26 @@ namespace Entidades_2017
             }
         }
 
+        #region "Constructores"
+
+        /// <summary>
+        /// Crea un snack
+        /// </summary>
+        /// <param name="marca">Marca del snack</param>
+        /// <param name="codigo">codigo de barras del snack</param>
+        /// <param name="color">Color del empaque</param>
+        public Snacks(Producto.EMarca marca, string codigo, ConsoleColor color)
+            : base(codigo, marca, color)
+        {
+        }
+
+        #endregion
+
+        #region "Metodos"
+        /// <summary>
+        /// Muestra en detalle el producto snack 
+        /// </summary>
+        /// <returns></returns>
         public override sealed string Mostrar()
         {
             StringBuilder sb = new StringBuilder();
@@ -35,5 +52,7 @@ namespace Entidades_2017
 
             return sb.ToString();
         }
+
+        #endregion
     }
 }
