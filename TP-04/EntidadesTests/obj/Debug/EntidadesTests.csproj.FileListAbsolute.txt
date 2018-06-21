@@ -1,0 +1,12 @@
+C:\Users\avill\C-sharp\ejercicios2\TP4\EntidadesTests\bin\Debug\EntidadesTests.dll
+C:\Users\avill\C-sharp\ejercicios2\TP4\EntidadesTests\bin\Debug\EntidadesTests.pdb
+C:\Users\avill\C-sharp\ejercicios2\TP4\EntidadesTests\bin\Debug\Entidades.dll
+C:\Users\avill\C-sharp\ejercicios2\TP4\EntidadesTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\avill\C-sharp\ejercicios2\TP4\EntidadesTests\bin\Debug\Entidades.pdb
+C:\Users\avill\C-sharp\ejercicios2\TP4\EntidadesTests\bin\Debug\Entidades.dll.config
+C:\Users\avill\C-sharp\ejercicios2\TP4\EntidadesTests\bin\Debug\es\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll
+C:\Users\avill\C-sharp\ejercicios2\TP4\EntidadesTests\obj\Debug\EntidadesTests.csprojResolveAssemblyReference.cache
+C:\Users\avill\C-sharp\ejercicios2\TP4\EntidadesTests\obj\Debug\EntidadesTests.csproj.CoreCompileInputs.cache
+C:\Users\avill\C-sharp\ejercicios2\TP4\EntidadesTests\obj\Debug\EntidadesTests.csproj.CopyComplete
+C:\Users\avill\C-sharp\ejercicios2\TP4\EntidadesTests\obj\Debug\EntidadesTests.dll
+C:\Users\avill\C-sharp\ejercicios2\TP4\EntidadesTests\obj\Debug\EntidadesTests.pdb
