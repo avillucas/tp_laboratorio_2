@@ -29,6 +29,10 @@ namespace Entidades
         }
         #endregion
         #region Metodos
+
+        /// <summary>
+        /// Aborta todos los hilos de paquetes 
+        /// </summary>
         public void FinEntregas()
         {
             foreach (Thread hilo in mockPaquetes )
@@ -37,15 +41,22 @@ namespace Entidades
             }
         }
 
+        /// <summary>
+        /// Permite mostrar los paquetes del correo ingresado
+        /// </summary>
+        /// <param name="elementos">Correo que se busca listar</param>
+        /// <returns>Listado de los correos </returns>
         string IMostrar<List<Paquete>>.MostrarDatos(IMostrar<List<Paquete>>elementos)
         {
             string datos = "" ;
-            //TODO PREGUNTAR POR QUE elementos es correo y no un listado de paquetes 
-            Correo correo = (Correo)elementos;            
-            foreach (Paquete p in correo.Paquetes)
+            if (elementos is Correo)
             {
-               datos +=  string.Format("{0} para {1} ({2})", p.TrackingID, p.DireccionEntrega, p.Estado.ToString());
-            }
+                Correo correo = (Correo)elementos;
+                foreach (Paquete p in correo.Paquetes)
+                {
+                    datos += string.Format("{0} para {1} ({2})", p.TrackingID, p.DireccionEntrega, p.Estado.ToString());
+                }
+            }            
             return datos;
         }
 

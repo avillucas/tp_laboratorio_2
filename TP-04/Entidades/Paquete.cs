@@ -22,7 +22,8 @@ namespace Entidades
         }
 
 
-        public delegate void DelegadoEstado(object sender, EventArgs e);        
+        public delegate void DelegadoEstado(object sender, EventArgs e);
+        public delegate void DelegadoEstadoException(Exception e);        
 
         #region Propiedades
         public string DireccionEntrega {
@@ -91,7 +92,7 @@ namespace Entidades
                     }
                     catch (Exception ex)
                     {
-                        InformaEstado(ex, null);
+                        InformaException(ex);
                     }
                     finally
                     {
@@ -103,14 +104,19 @@ namespace Entidades
         }
 
         /// <summary>
-        /// MostrarDatos utilizará string.Format con el siguiente formato "{0} para {1}", p.trackingID,  p.direccionEntrega para compilar la información del paquete.
+        ///
         /// </summary>
         /// <param name="elemento"></param>
         /// <returns></returns>
         public string MostrarDatos(IMostrar<Paquete> elemento)
-        {            
-            Paquete paquete = (Paquete)elemento;
-            return string.Format("{0} para {1}", paquete.TrackingID, paquete.DireccionEntrega);
+        {
+            string st = "";
+            if (elemento is Paquete)
+            {
+                Paquete paquete = (Paquete)elemento;
+                st =  string.Format("{0} para {1}", paquete.TrackingID, paquete.DireccionEntrega);
+            }
+            return st;
         }
 
         public static bool operator ==(Paquete p1, Paquete p2)
@@ -129,7 +135,8 @@ namespace Entidades
         #endregion
 
         #region Eventos
-        public event DelegadoEstado InformaEstado;       
+        public event DelegadoEstado InformaEstado;
+        public event DelegadoEstadoException InformaException;
         #endregion
     }
 }

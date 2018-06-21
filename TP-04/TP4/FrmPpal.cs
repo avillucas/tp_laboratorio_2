@@ -73,6 +73,11 @@ namespace MainCorreo
             }
         }
 
+        private void paq_InformarException(Exception exception) 
+        {
+            MessageBox.Show(exception.Message, "Ha Ocurrido un error intentar salvar el paquete ", MessageBoxButtons.OK, MessageBoxIcon.Error);            
+        }
+
         private void paq_InformaEstado(object sender, EventArgs e)
         {
             if (this.InvokeRequired)
@@ -82,14 +87,7 @@ namespace MainCorreo
             }
             else
             {
-                if (sender is Exception) {
-                    Exception ex = (Exception) sender;
-                    MessageBox.Show(ex.Message, "Ha Ocurrido un error intentar salvar el paquete ", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-                else
-                { 
-                    ActualizarEstados();
-                }
+                    ActualizarEstados();        
             }
         }
 
@@ -97,6 +95,7 @@ namespace MainCorreo
         {            
             Paquete paquete = new Paquete(txtDireccion.Text, mtxtTrackingID.Text);
             paquete.InformaEstado += paq_InformaEstado;
+            paquete.InformaException += paq_InformarException;
             try
             {
                 correo += paquete;

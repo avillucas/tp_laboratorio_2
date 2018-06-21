@@ -3,7 +3,7 @@
   <Profiles />
   <Settings>
     <Setting Name="Connection" Type="System.String" Scope="User">
-      <Value Profile="(Default)">Server=localhost\SQLEXPRESS;Database=correo-sp-2017;Trusted_Connection=True;</Value>
+      <Value Profile="(Default)">Server=.\SQLEXPRESS;Database=correo-sp-2017;Trusted_Connection=True;</Value>
     </Setting>
     <Setting Name="Alumno" Type="System.String" Scope="User">
       <Value Profile="(Default)">Avila Lucas Ariel</Value>

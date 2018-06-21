@@ -12,3 +12,14 @@ C:\Users\avill\C-sharp\ejercicios2\TP4\tp4\obj\Debug\MainCorreo.csproj.CoreCompi
 C:\Users\avill\C-sharp\ejercicios2\TP4\tp4\obj\Debug\MainCorreo.csproj.CopyComplete
 C:\Users\avill\C-sharp\ejercicios2\TP4\tp4\obj\Debug\tp4.exe
 C:\Users\avill\C-sharp\ejercicios2\TP4\tp4\obj\Debug\tp4.pdb
+D:\tp_laboratorio_2\TP-04\tp4\bin\Debug\tp4.exe.config
+D:\tp_laboratorio_2\TP-04\tp4\obj\Debug\tp4.exe
+D:\tp_laboratorio_2\TP-04\tp4\obj\Debug\tp4.pdb
+D:\tp_laboratorio_2\TP-04\tp4\bin\Debug\tp4.exe
+D:\tp_laboratorio_2\TP-04\tp4\bin\Debug\tp4.pdb
+D:\tp_laboratorio_2\TP-04\tp4\bin\Debug\Entidades.dll
+D:\tp_laboratorio_2\TP-04\tp4\bin\Debug\Entidades.pdb
+D:\tp_laboratorio_2\TP-04\tp4\obj\Debug\MainCorreo.csprojResolveAssemblyReference.cache
+D:\tp_laboratorio_2\TP-04\tp4\obj\Debug\MainCorreo.FrmPpal.resources
+D:\tp_laboratorio_2\TP-04\tp4\obj\Debug\tp4.Properties.Resources.resources
+D:\tp_laboratorio_2\TP-04\tp4\obj\Debug\MainCorreo.csproj.GenerateResource.Cache
