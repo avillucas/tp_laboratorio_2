@@ -70,6 +70,9 @@ namespace Entidades
 
         #region Metodos
 
+        /// <summary>
+        /// Determina el siguiente estado de un paquete , persiste el paquete en caso de terminar
+        /// </summary>
         public void MockCicloDeVida()
         {
             bool finish = false;
@@ -104,7 +107,7 @@ namespace Entidades
         }
 
         /// <summary>
-        ///
+        /// Muestra un paquete
         /// </summary>
         /// <param name="elemento"></param>
         /// <returns></returns>
@@ -114,20 +117,37 @@ namespace Entidades
             if (elemento is Paquete)
             {
                 Paquete paquete = (Paquete)elemento;
-                st =  string.Format("{0} para {1}", paquete.TrackingID, paquete.DireccionEntrega);
+                st = string.Format("\n{0} para {1}", paquete.TrackingID, paquete.DireccionEntrega);
             }
             return st;
         }
 
+        /// <summary>
+        /// Retorna falso en caso de que dos paquetes tengan el mismo trackingID
+        /// </summary>
+        /// <param name="p1"></param>
+        /// <param name="p2"></param>
+        /// <returns></returns>
         public static bool operator ==(Paquete p1, Paquete p2)
         {
             return p1.trackingID == p2.trackingID;
         }
 
+        /// <summary>
+        /// Retorna falso en caso de que dos paquetes NO tengan el mismo trackingID
+        /// </summary>
+        /// <param name="p1"></param>
+        /// <param name="p2"></param>
+        /// <returns></returns>
         public static bool operator !=(Paquete p1, Paquete p2)
         {
             return !(p1==p2);
         }
+
+        /// <summary>
+        /// Retorna contenido de un paquete
+        /// </summary>
+        /// <returns></returns>
         public override string ToString()
         {
             return string.Format("{0} para {1}", TrackingID, DireccionEntrega);

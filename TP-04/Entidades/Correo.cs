@@ -37,7 +37,9 @@ namespace Entidades
         {
             foreach (Thread hilo in mockPaquetes )
             {
-                hilo.Abort();
+                if (hilo.IsAlive) { 
+                    hilo.Abort();
+                }
             }
         }
 
@@ -60,6 +62,13 @@ namespace Entidades
             return datos;
         }
 
+        /// <summary>
+        /// Permite agregar un paquete al correo 
+        /// </summary>
+        /// <param name="c"></param>
+        /// <param name="p"></param>        
+        /// <exception cref="TrackingIdRepetidoException"></exception>
+        /// <returns></returns>
         public static Correo operator +(Correo c, Paquete p)
         {
             foreach (Paquete paquete in c.paquetes)

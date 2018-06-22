@@ -9,6 +9,7 @@ namespace Entidades
     public class TrackingIdRepetidoException : Exception
     {
         #region Constructores
+
         public TrackingIdRepetidoException(string mensaje) : base(mensaje)
         {
         }

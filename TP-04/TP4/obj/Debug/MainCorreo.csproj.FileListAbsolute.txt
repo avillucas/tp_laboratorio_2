@@ -23,3 +23,17 @@ D:\tp_laboratorio_2\TP-04\tp4\obj\Debug\MainCorreo.csprojResolveAssemblyReferenc
 D:\tp_laboratorio_2\TP-04\tp4\obj\Debug\MainCorreo.FrmPpal.resources
 D:\tp_laboratorio_2\TP-04\tp4\obj\Debug\tp4.Properties.Resources.resources
 D:\tp_laboratorio_2\TP-04\tp4\obj\Debug\MainCorreo.csproj.GenerateResource.Cache
+C:\Users\avill\C-sharp\tp_laboratorio_2_v\TP-04\tp4\bin\Debug\tp4.exe.config
+C:\Users\avill\C-sharp\tp_laboratorio_2_v\TP-04\tp4\bin\Debug\tp4.exe
+C:\Users\avill\C-sharp\tp_laboratorio_2_v\TP-04\tp4\bin\Debug\tp4.pdb
+C:\Users\avill\C-sharp\tp_laboratorio_2_v\TP-04\tp4\bin\Debug\Entidades.dll
+C:\Users\avill\C-sharp\tp_laboratorio_2_v\TP-04\tp4\bin\Debug\Entidades.pdb
+C:\Users\avill\C-sharp\tp_laboratorio_2_v\TP-04\tp4\bin\Debug\Entidades.dll.config
+C:\Users\avill\C-sharp\tp_laboratorio_2_v\TP-04\tp4\obj\Debug\MainCorreo.csprojResolveAssemblyReference.cache
+C:\Users\avill\C-sharp\tp_laboratorio_2_v\TP-04\tp4\obj\Debug\MainCorreo.FrmPpal.resources
+C:\Users\avill\C-sharp\tp_laboratorio_2_v\TP-04\tp4\obj\Debug\tp4.Properties.Resources.resources
+C:\Users\avill\C-sharp\tp_laboratorio_2_v\TP-04\tp4\obj\Debug\MainCorreo.csproj.GenerateResource.cache
+C:\Users\avill\C-sharp\tp_laboratorio_2_v\TP-04\tp4\obj\Debug\MainCorreo.csproj.CoreCompileInputs.cache
+C:\Users\avill\C-sharp\tp_laboratorio_2_v\TP-04\tp4\obj\Debug\MainCorreo.csproj.CopyComplete
+C:\Users\avill\C-sharp\tp_laboratorio_2_v\TP-04\tp4\obj\Debug\tp4.exe
+C:\Users\avill\C-sharp\tp_laboratorio_2_v\TP-04\tp4\obj\Debug\tp4.pdb

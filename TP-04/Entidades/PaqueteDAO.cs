@@ -14,7 +14,12 @@ namespace Entidades
         private static SqlCommand _comando;
 
         #region Constructores
-        static PaqueteDAO()        {
+
+        /// <summary>
+        ///  Inicializa la coneccion a la base
+        /// </summary>
+        static PaqueteDAO()
+        {
             _conexion = new SqlConnection(Properties.Settings.Default.Connection);
             _comando = new SqlCommand();
             _comando.CommandType = CommandType.Text;
@@ -22,6 +27,11 @@ namespace Entidades
         }
         #endregion
         #region Metodos
+        /// <summary>
+        /// Persiste un paquete en la base de datos
+        /// </summary>
+        /// <param name="p"></param>
+        /// <returns></returns>
         public static bool Insertar(Paquete p)
         {
             string sql = "INSERT INTO Paquetes (direccionEntrega,trackingID,alumno) VALUES('" + p.DireccionEntrega + "','" + p.TrackingID + "','" + Properties.Settings.Default.Alumno + "')";

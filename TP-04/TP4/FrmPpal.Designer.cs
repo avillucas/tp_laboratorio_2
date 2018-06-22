@@ -70,7 +70,7 @@
             // lblEstadoEnViaje
             // 
             this.lblEstadoEnViaje.AutoSize = true;
-            this.lblEstadoEnViaje.Location = new System.Drawing.Point(239, 23);
+            this.lblEstadoEnViaje.Location = new System.Drawing.Point(256, 23);
             this.lblEstadoEnViaje.Name = "lblEstadoEnViaje";
             this.lblEstadoEnViaje.Size = new System.Drawing.Size(46, 13);
             this.lblEstadoEnViaje.TabIndex = 16;
@@ -79,7 +79,7 @@
             // lblEstadoEntregado
             // 
             this.lblEstadoEntregado.AutoSize = true;
-            this.lblEstadoEntregado.Location = new System.Drawing.Point(478, 23);
+            this.lblEstadoEntregado.Location = new System.Drawing.Point(524, 23);
             this.lblEstadoEntregado.Name = "lblEstadoEntregado";
             this.lblEstadoEntregado.Size = new System.Drawing.Size(56, 13);
             this.lblEstadoEntregado.TabIndex = 14;
@@ -88,7 +88,7 @@
             // lstEstadoEnViaje
             // 
             this.lstEstadoEnViaje.FormattingEnabled = true;
-            this.lstEstadoEnViaje.Location = new System.Drawing.Point(242, 48);
+            this.lstEstadoEnViaje.Location = new System.Drawing.Point(259, 48);
             this.lstEstadoEnViaje.Name = "lstEstadoEnViaje";
             this.lstEstadoEnViaje.Size = new System.Drawing.Size(207, 173);
             this.lstEstadoEnViaje.TabIndex = 12;
@@ -113,7 +113,7 @@
             // lstEstadoEntregado
             // 
             this.lstEstadoEntregado.FormattingEnabled = true;
-            this.lstEstadoEntregado.Location = new System.Drawing.Point(481, 48);
+            this.lstEstadoEntregado.Location = new System.Drawing.Point(527, 48);
             this.lstEstadoEntregado.Name = "lstEstadoEntregado";
             this.lstEstadoEntregado.Size = new System.Drawing.Size(207, 173);
             this.lstEstadoEntregado.TabIndex = 13;
@@ -212,12 +212,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(767, 450);
             this.Controls.Add(this.rtbMostrar);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
+            this.MinimizeBox = false;
             this.Name = "FrmPpal";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.WindowsDefaultBounds;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Correo UTN por Avila.Lucas.Ariel.2C";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmPpal_FormClosing);
             this.Load += new System.EventHandler(this.FrmPpal_Load);
